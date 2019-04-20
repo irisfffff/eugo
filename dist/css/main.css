@@ -19,6 +19,9 @@ h1, h2, h3 {
 h1 {
   font-size: 2.5rem; }
 
+h2 {
+  font-size: 2rem; }
+
 .bold {
   font-weight: 700; }
 
@@ -100,23 +103,32 @@ h1 {
     padding: 4rem;
     padding-bottom: 0;
     color: #333; }
+    #app .box1 h2 {
+      margin-bottom: 1rem; }
     #app .box1 ul {
       list-style-type: none;
       margin: 0;
       padding: 2rem 4rem;
+      padding-bottom: 0;
       text-align: center; }
     #app .box1 li {
       display: inline-block;
-      border: 1px #00918D solid;
       border-radius: 0.5rem;
+      color: rgba(51, 51, 51, 0.5);
       text-align: left;
+      box-sizing: border-box;
       font-size: 1.2rem;
-      padding: 1.5rem 2rem;
-      width: 70%;
-      margin-bottom: 2rem; }
+      padding: 2rem;
+      width: 100%;
+      max-width: 30rem;
+      margin-bottom: 2rem;
+      -webkit-box-shadow: 2px 2px 10px 0px rgba(51, 51, 51, 0.2);
+      -moz-box-shadow: 2px 2px 10px 0px rgba(51, 51, 51, 0.2);
+      box-shadow: 2px 2px 10px 0px rgba(51, 51, 51, 0.2); }
       #app .box1 li:hover {
-        font-size: 1.5rem;
-        padding: 1.8rem 2.5rem; }
+        font-size: 1.4rem;
+        color: #333333;
+        padding: 2rem 2.5rem; }
   #app .box2 {
     text-align: center; }
     #app .box2 img {
@@ -124,33 +136,35 @@ h1 {
       min-width: 40%;
       max-width: 15rem;
       padding-top: 4rem;
+      padding-bottom: 5rem;
       margin: auto; }
 
 #rule {
   height: max-content;
   background: #fff;
   color: #333;
-  padding-bottom: 3rem; }
-  #rule h1 {
-    padding-top: 3rem; }
-  #rule .rule1, #rule .rule2 {
+  padding: 4rem; }
+  #rule h2 {
+    padding-bottom: 2rem; }
+  #rule .rule {
     display: flex;
     padding: 2rem 4rem;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     text-align: center; }
-    #rule .rule1 div, #rule .rule2 div {
+    #rule .rule div {
       height: max-content;
       width: 15rem;
       display: grid;
       grid-template-rows: 3fr 1fr;
-      margin: 0 2rem; }
-    #rule .rule1 img, #rule .rule2 img {
+      margin: 0 5rem; }
+    #rule .rule img {
       margin: 1.5rem auto;
       height: 10rem;
       max-width: 80%;
       object-fit: contain; }
-    #rule .rule1 span, #rule .rule2 span {
+    #rule .rule span {
       font-size: 1.2rem; }
 
 footer {
