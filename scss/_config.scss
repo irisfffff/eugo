@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700');
+
+$primary-color: #fff;
+$secondary-color: #333;
+$theme-color1: #00918D;
+$theme-color2: #F6BF1E;
+
+// Media query mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
