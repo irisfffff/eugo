@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700");
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background: #fff;
+  height: 100%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff; }
+
+h1, h2, h3 {
+  font-weight: 400;
+  margin: 0; }
+
+h1 {
+  font-size: 2.5rem; }
+
+.bold {
+  font-weight: 700; }
+
+.semi-bold {
+  font-weight: 600; }
+
+.medium {
+  font-weight: 500; }
+
+.light {
+  font-weight: 300; }
+
+#head {
+  height: 90vh;
+  background: url(../img/Main_01_New_Final_03.jpg);
+  background-size: cover;
+  background-position: center; }
+  #head .overlay {
+    height: 100%;
+    width: 100%; }
+  #head .logo1 {
+    margin: 8rem auto 4rem auto;
+    max-height: 15rem; }
+  #head h1 {
+    margin-bottom: 3rem; }
+  #head .app-button {
+    background: #fff;
+    color: #333;
+    width: 12rem;
+    margin: auto 1.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    display: inline-block; }
+
+#vision {
+  height: 38rem;
+  box-sizing: border-box;
+  position: relative; }
+  #vision .center {
+    height: 100%; }
+  #vision p {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-33%, -50%);
+    color: #333;
+    margin-top: 0;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    box-sizing: border-box; }
+    #vision p .medium {
+      display: block;
+      margin-top: 1rem; }
+  #vision .main-border {
+    position: absolute;
+    height: 5rem;
+    width: 100%;
+    background-image: url(../img/StripesSquare_10xForMobile_26xOndesktop.svg);
+    background-repeat: repeat-x; }
+  #vision .top {
+    top: 0; }
+  #vision .bottom {
+    bottom: 0; }
+
+#app {
+  height: max-content;
+  background: #fff;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap; }
+  #app .box1, #app .box2 {
+    flex: 1 1 auto;
+    flex-basis: 384px; }
+  #app .box1 {
+    padding: 4rem;
+    padding-bottom: 0;
+    color: #333; }
+    #app .box1 ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 2rem 4rem;
+      text-align: center; }
+    #app .box1 li {
+      display: inline-block;
+      border: 1px #00918D solid;
+      border-radius: 0.5rem;
+      text-align: left;
+      font-size: 1.2rem;
+      padding: 1.5rem 2rem;
+      width: 70%;
+      margin-bottom: 2rem; }
+      #app .box1 li:hover {
+        font-size: 1.5rem;
+        padding: 1.8rem 2.5rem; }
+  #app .box2 {
+    text-align: center; }
+    #app .box2 img {
+      display: block;
+      min-width: 40%;
+      max-width: 15rem;
+      padding-top: 4rem;
+      margin: auto; }
+
+#rule {
+  height: max-content;
+  background: #fff;
+  color: #333;
+  padding-bottom: 3rem; }
+  #rule h1 {
+    padding-top: 3rem; }
+  #rule .rule1, #rule .rule2 {
+    display: flex;
+    padding: 2rem 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; }
+    #rule .rule1 div, #rule .rule2 div {
+      height: max-content;
+      width: 15rem;
+      display: grid;
+      grid-template-rows: 3fr 1fr;
+      margin: 0 2rem; }
+    #rule .rule1 img, #rule .rule2 img {
+      margin: 1.5rem auto;
+      height: 10rem;
+      max-width: 80%;
+      object-fit: contain; }
+    #rule .rule1 span, #rule .rule2 span {
+      font-size: 1.2rem; }
+
+footer {
+  background: #00918D;
+  text-align: center;
+  justify-content: center;
+  font-weight: 100;
+  padding: 4rem;
+  height: 6rem; }
+  footer div {
+    margin-bottom: 2rem; }
+  footer img {
+    height: 1.5rem;
+    margin: 0 0.2rem; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem; }
+  #head {
+    height: max-content; }
+    #head .logo1 {
+      margin: 5rem auto 2rem auto;
+      max-width: 60%; }
+    #head .overlay {
+      width: 100%;
+      height: max-content; }
+    #head h1 {
+      margin-bottom: 0; }
+    #head .app-button {
+      display: block;
+      margin: 1rem auto 2rem auto;
+      padding: 1rem 1.5rem;
+      width: 8rem; }
+  #vision {
+    height: 35rem;
+    min-height: max-content; }
+    #vision p {
+      font-size: 1.5rem; }
+  #app .box1 {
+    padding: 0;
+    padding-top: 4rem; }
+  #app .box2 img {
+    padding-top: 0;
+    padding-bottom: 2rem; } }
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem; }
+  #head {
+    height: max-content; }
+    #head .overlay {
+      width: 100%;
+      height: max-content; }
+    #head h1 {
+      margin-bottom: 0; }
+    #head .app-button {
+      display: block;
+      font-size: 0.8rem;
+      margin: 1rem auto 1.5rem auto;
+      padding: 0.8rem 1.2rem;
+      width: 6rem; }
+  #vision p {
+    font-size: 1.2rem; } }
