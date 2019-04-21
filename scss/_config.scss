@@ -6,6 +6,12 @@ $theme-color1: #00918D;
 $theme-color2: #F6BF1E;
 
 // Media query mixins
+@mixin mediaXs {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     @content;
@@ -28,4 +34,8 @@ $theme-color2: #F6BF1E;
   @media screen and (min-width: 1171px) {
     @content;
   }
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
 }
