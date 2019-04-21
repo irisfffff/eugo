@@ -124,6 +124,7 @@ h2 {
 
 #app {
   height: max-content;
+  min-height: 45rem;
   background: $primary-color;
   display: flex;
   align-items: stretch;
@@ -135,9 +136,9 @@ h2 {
   }
 
   .box1 {
-    padding: 4rem;
-    padding-bottom: 0;
+    padding: 6rem 4rem 0 4rem;
     color: $secondary-color;
+    min-height: 36rem;
 
     h2 {
       margin-bottom: 1rem;
@@ -146,7 +147,7 @@ h2 {
     ul {
       list-style-type: none;
       margin: 0;
-      padding: 2rem 4rem;
+      padding: 2rem;
       padding-bottom: 0;
       text-align: center;
     }
@@ -172,6 +173,7 @@ h2 {
         color: rgba($secondary-color, 1);
         padding: 2rem 2.5rem;
       }
+
     }
   }
 
@@ -180,9 +182,9 @@ h2 {
 
     img {
       display: block;
-      min-width: 40%;
-      max-width: 15rem;
-      padding-top: 4rem;
+      width: 65%;
+      max-width: 20rem;
+      padding-top: 5rem;
       padding-bottom: 5rem;
       margin: auto;
     }
@@ -192,17 +194,16 @@ h2 {
 
 #rule {
   height: max-content;
-  background: $primary-color;
-  color: $secondary-color;
-  padding: 4rem;
+  background: $secondary-color;
+  color: $primary-color;
+  padding: 6rem 4rem;
 
   h2 {
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
   }
 
   .rule {
     display: flex;
-    padding: 2rem 4rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -219,12 +220,12 @@ h2 {
     img {
       margin: 1.5rem auto;
       height: 10rem;
-      max-width: 80%;
+      max-width: 70%;
       object-fit: contain;
     }
 
     span {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -233,12 +234,12 @@ footer {
   background: $theme-color1;
   text-align: center;
   justify-content: center;
-  font-weight: 100;
-  padding: 4rem;
-  height: 6rem;
+  font-weight: 300;
+  padding: 2rem;
+  height: 5rem;
 
   div {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   img {

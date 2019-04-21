@@ -92,6 +92,7 @@ h2 {
 
 #app {
   height: max-content;
+  min-height: 45rem;
   background: #fff;
   display: flex;
   align-items: stretch;
@@ -100,15 +101,15 @@ h2 {
     flex: 1 1 auto;
     flex-basis: 384px; }
   #app .box1 {
-    padding: 4rem;
-    padding-bottom: 0;
-    color: #333; }
+    padding: 6rem 4rem 0 4rem;
+    color: #333;
+    min-height: 36rem; }
     #app .box1 h2 {
       margin-bottom: 1rem; }
     #app .box1 ul {
       list-style-type: none;
       margin: 0;
-      padding: 2rem 4rem;
+      padding: 2rem;
       padding-bottom: 0;
       text-align: center; }
     #app .box1 li {
@@ -133,22 +134,21 @@ h2 {
     text-align: center; }
     #app .box2 img {
       display: block;
-      min-width: 40%;
-      max-width: 15rem;
-      padding-top: 4rem;
+      width: 65%;
+      max-width: 20rem;
+      padding-top: 5rem;
       padding-bottom: 5rem;
       margin: auto; }
 
 #rule {
   height: max-content;
-  background: #fff;
-  color: #333;
-  padding: 4rem; }
+  background: #333;
+  color: #fff;
+  padding: 6rem 4rem; }
   #rule h2 {
-    padding-bottom: 2rem; }
+    padding-bottom: 4rem; }
   #rule .rule {
     display: flex;
-    padding: 2rem 4rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -162,27 +162,40 @@ h2 {
     #rule .rule img {
       margin: 1.5rem auto;
       height: 10rem;
-      max-width: 80%;
+      max-width: 70%;
       object-fit: contain; }
     #rule .rule span {
-      font-size: 1.2rem; }
+      font-size: 1.3rem; }
 
 footer {
   background: #00918D;
   text-align: center;
   justify-content: center;
-  font-weight: 100;
-  padding: 4rem;
-  height: 6rem; }
+  font-weight: 300;
+  padding: 2rem;
+  height: 5rem; }
   footer div {
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   footer img {
     height: 1.5rem;
     margin: 0 0.2rem; }
 
+@media screen and (min-width: 1171px) {
+  #app .box1 {
+    padding: 4rem 6rem; }
+    #app .box1 li {
+      font-size: 1.5rem;
+      margin-bottom: 3rem; }
+      #app .box1 li:hover {
+        font-size: 1.8rem; }
+  #app .box2 img {
+    width: 60%; } }
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem; }
+  h2 {
+    font-size: 1.5rem; }
   #head {
     height: max-content; }
     #head .logo1 {
@@ -204,11 +217,18 @@ footer {
     #vision p {
       font-size: 1.5rem; }
   #app .box1 {
-    padding: 0;
-    padding-top: 4rem; }
+    padding: 3rem 2rem;
+    padding-bottom: 0; }
   #app .box2 img {
-    padding-top: 0;
-    padding-bottom: 2rem; } }
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+  #rule {
+    padding-top: 3rem; }
+  footer {
+    font-size: 0.8rem; }
+    footer img {
+      height: 1.2rem;
+      margin: 0 0.1rem; } }
 
 @media screen and (max-width: 500px) {
   h1 {
@@ -227,4 +247,17 @@ footer {
       padding: 0.8rem 1.2rem;
       width: 6rem; }
   #vision p {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  #app .box1 {
+    min-height: 30rem; }
+    #app .box1 ul {
+      padding: 1rem;
+      padding-bottom: 0; }
+    #app .box1 li {
+      padding: 1rem 1.5rem;
+      font-size: 1rem; }
+      #app .box1 li:hover {
+        font-size: 1.2rem;
+        padding: 1.5rem 2rem; }
+  #rule {
+    padding: 6rem 0; } }
