@@ -36,7 +36,7 @@ h2 {
 
 #head {
   height: 90vh;
-  background: url(../img/Main_01_New_Final_03.jpg);
+  background: url(../img/Main_01_New_Final.jpg);
   background-size: cover;
   background-position: center; }
   #head .overlay {
@@ -61,34 +61,36 @@ h2 {
     display: inline-block; }
 
 #vision {
-  height: 38rem;
+  height: 40rem;
   box-sizing: border-box;
-  position: relative; }
-  #vision .center {
-    height: 100%; }
-  #vision p {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-33%, -50%);
-    color: #333;
-    margin-top: 0;
-    font-size: 1.6rem;
-    padding: 2rem 0;
-    box-sizing: border-box; }
-    #vision p .medium {
-      display: block;
-      margin-top: 1rem; }
+  position: relative;
+  display: flex;
+  flex-direction: column; }
   #vision .main-border {
-    position: absolute;
     height: 5rem;
     width: 100%;
     background-image: url(../img/StripesSquare_10xForMobile_26xOndesktop_02.svg);
     background-repeat: repeat-x; }
-  #vision .top {
-    top: 0; }
-  #vision .bottom {
-    bottom: 0; }
+  #vision .center {
+    flex-grow: 1; }
+  #vision p {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-33%, -45%);
+    color: #333;
+    margin: 0;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    box-sizing: border-box; }
+    #vision p .title {
+      font-size: 2rem; }
+    #vision p .medium {
+      display: block; }
+
+#app-illustration {
+  width: 100%;
+  height: auto; }
 
 #app {
   height: max-content;
@@ -220,10 +222,12 @@ footer {
       padding: 1rem 1.5rem;
       width: 8rem; }
   #vision {
-    height: 35rem;
+    height: 38rem;
     min-height: max-content; }
     #vision p {
-      font-size: 1.4rem; }
+      font-size: 1.2rem; }
+      #vision p .title {
+        font-size: 1.8rem; }
   #app .box1 {
     padding: 3rem 2rem;
     padding-bottom: 0; }
@@ -257,7 +261,9 @@ footer {
       padding: 0.8rem 1.2rem;
       width: 6rem; }
   #vision p {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
+    #vision p .title {
+      font-size: 1.5rem; }
   #app .box1 {
     min-height: 26rem; }
     #app .box1 ul {
@@ -286,9 +292,11 @@ footer {
   h2 {
     font-size: 1.3rem; }
   #vision {
-    height: 38rem; }
+    height: 40rem; }
     #vision p {
-      font-size: 1rem; }
+      font-size: 0.8rem; }
+      #vision p .title {
+        font-size: 1.3rem; }
   #app .box1 {
     min-height: 22rem; }
     #app .box1 ul {

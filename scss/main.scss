@@ -45,7 +45,7 @@ h2 {
 
 #head {
   height: 90vh;
-  background: url(../img/Main_01_New_Final_03.jpg);
+  background: url(../img/Main_01_New_Final.jpg);
   background-size: cover;
   background-position: center;
 
@@ -80,46 +80,48 @@ h2 {
 }
 
 #vision {
-  height: 38rem;
+  height: 40rem;
   box-sizing: border-box;
   position: relative;
-
-  .center {
-    height: 100%;
-  }
-
-  p {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-33%, -50%);
-    color: $secondary-color;
-    margin-top: 0;
-    font-size: 1.6rem;
-    padding: 2rem 0;
-    box-sizing: border-box;
-
-    .medium {
-      display: block;
-      margin-top: 1rem;
-    }
-  }
+  display: flex;
+  flex-direction: column;
 
   .main-border {
-    position: absolute;
+    // position: absolute;
     height: 5rem;
     width: 100%;
     background-image: url(../img/StripesSquare_10xForMobile_26xOndesktop_02.svg);
     background-repeat: repeat-x;
   }
 
-  .top {
-    top: 0;
+  .center {
+    flex-grow: 1;
   }
 
-  .bottom {
-    bottom: 0;
+  p {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-33%, -45%);
+    color: $secondary-color;
+    margin: 0;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    box-sizing: border-box;
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .medium {
+      display: block;
+    }
   }
+}
+
+#app-illustration {
+  width: 100%;
+  height: auto;
 }
 
 #app {

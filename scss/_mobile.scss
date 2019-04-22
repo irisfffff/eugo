@@ -64,11 +64,14 @@
   }
 
   #vision {
-    height: 35rem;
+    height: 38rem;
     min-height: max-content;
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+      .title {
+        font-size: 1.8rem
+      }
     }
   }
 
@@ -132,7 +135,11 @@
 
   #vision {
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
+
+      .title {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -192,10 +199,14 @@
   }
 
   #vision {
-    height: 38rem;
+    height: 40rem;
 
     p {
-      font-size: 1rem;
+      font-size: 0.8rem;
+
+      .title {
+        font-size: 1.3rem;
+      }
     }
   }
 
