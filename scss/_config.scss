@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700|IBM+Plex+Sans:300,400,500');
 
 $primary-color: #fff;
 $secondary-color: #333;
@@ -37,5 +37,5 @@ $theme-color2: #F6BF1E;
 }
 
 @mixin easeOut {
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
